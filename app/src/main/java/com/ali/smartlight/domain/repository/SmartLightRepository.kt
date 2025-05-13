@@ -1,10 +1,14 @@
 package com.ali.smartlight.domain.repository
 
-import com.ali.smartlight.domain.model.LightState
-import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.StateFlow
 
 interface SmartLightRepository {
-    fun toggleLight(isOn: Boolean)
-    fun setBrightness(brightness: Int)
-    fun observeLightState(): Flow<LightState>
+    val isConnected: StateFlow<Boolean>
+    val lightState: StateFlow<Boolean>
+    val brightness: StateFlow<Int>
+
+    fun connect()
+    fun publishState(isOn: Boolean)
+    fun publishBrightness(value: Int)
+    fun disconnect()
 }
