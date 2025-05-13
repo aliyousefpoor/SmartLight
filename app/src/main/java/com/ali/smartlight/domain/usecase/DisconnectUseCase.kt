@@ -3,5 +3,5 @@ package com.ali.smartlight.domain.usecase
 import com.ali.smartlight.domain.repository.SmartLightRepository
 
 class DisconnectUseCase(private val repository: SmartLightRepository) {
-    operator fun invoke(isOn: Boolean) = repository.toggleLight(isOn)
+    operator fun invoke() = repository.disconnect()
 }
