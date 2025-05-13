@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.ali.smartlight"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ali.smartlight"
