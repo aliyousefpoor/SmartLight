@@ -1,4 +1,4 @@
-package com.ali.smartlight
+package com.ali.smartlight.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
