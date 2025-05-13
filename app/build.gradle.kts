@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.ali.smartlight"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ali.smartlight"
@@ -66,6 +66,7 @@ dependencies {
     // Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+    kapt(libs.hilt.android.compiler)
 }
 
 kapt {
