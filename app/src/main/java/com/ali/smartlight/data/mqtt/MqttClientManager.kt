@@ -10,7 +10,7 @@ import javax.inject.Singleton
 @Singleton
 class MqttClientManager @Inject constructor() {
 
-    private val brokerUrl = "tcp://broker.hivemq.com:1883"
+    private val brokerUrl = "tcp://192.168.33.16:1883"
     private val clientId = MqttClient.generateClientId()
     private val mqttClient = MqttClient(brokerUrl, clientId, MemoryPersistence())
 
