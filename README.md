@@ -1,6 +1,6 @@
 # 💡 SmartLight
 
-SmartLight is an Android application that connects to an MQTT broker (such as [Mosquitto](https://mosquitto.org)) to control and monitor smart lighting devices. The app enables real-time light toggling and brightness control via MQTT topics.
+SmartLight is an Android application built with **Jetpack Compose**, **CleanArch**, **Hilt**, and **MQTT** to control and monitor smart lighting devices. It uses the MQTT protocol to communicate with a broker and update UI in real-time based on messages from the device.
 
 ---
 
@@ -19,15 +19,15 @@ SmartLight is an Android application that connects to an MQTT broker (such as [M
 ## 🧱 Architecture
 
 - **Presentation Layer**  
-  - MainScreen 
+  - `MainScreen` 
   - `SmartLightViewModel`  
 
 - **Domain Layer**  
   - `SmartLightRepository` interface
-  - ConnectUseCase
-  - DisconnectUseCase
-  - PublishBrightnessUseCase
-  - ToggleLightUseCase
+  - `ConnectUseCase`
+  - `DisconnectUseCase`
+  - `PublishBrightnessUseCase`
+  - `ToggleLightUseCase`
 
 - **Data Layer**  
   - `SmartLightRepositoryImpl`  
